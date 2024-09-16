@@ -1,104 +1,89 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"
-      />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"
+    />
 
-      <!--
-    - primary meta tags
-  -->
-      <title>NitroAutoService - Auto Wartung & Reparatur Service</title>
-      <meta
-        name="title"
-        content="NitroAutoService - Auto Wartung & Reparatur Service"
-      />
-      <meta
-        name="description"
-        content="NitroAutoService - Auto Wartung & Reparatur Service"
-      />
+    <!-- Primary Meta Tags -->
+    <title>NitroAutoService - Auto Wartung & Reparatur Service</title>
+    <meta
+      name="title"
+      content="NitroAutoService - Auto Wartung & Reparatur Service"
+    />
+    <meta
+      name="description"
+      content="NitroAutoService - Auto Wartung & Reparatur Service"
+    />
 
-      <!--
-    - favicon
-  -->
-      <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
 
-      <!--
-    - google font link
-  -->
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Mulish&display=swap"
-        rel="stylesheet"
-      />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Mulish&display=swap"
+      rel="stylesheet"
+    />
 
-      <!--
-    - material icon font
-  -->
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,600,0,0"
-      />
+    <!-- Material Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,600,0,0"
+    />
 
-      <!--
-    - custom css link
-  -->
-      <link rel="stylesheet" href="./assets/css/style.css" />
-      <!-- Swiper CSS -->
-      <link rel="stylesheet" href="assets/js/swiper/swiper-bundle.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-      <!--
-    - preload images
-  -->
-      <link rel="preload" as="image" href="./assets/images/hero-banner.png" />
-      <link rel="preload" as="image" href="./assets/images/hero-bg.jpg" />
-    </head>
-    <!-- ... (keep your existing head content) ... -->
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="assets/js/swiper/swiper-bundle.min.css" />
 
-    <style>
-      /* Add these styles for the slider */
-
-      body,
-      html {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-      }
-
-      .swiper-container {
-        width: 100vw;
-        height: 100vh;
-      }
-
-      .swiper-slide {
-        width: 100vw;
-        height: 100vh;
-      }
-
-      .swiper-slide > section {
-        height: 100%;
-        overflow-y: hidden;
-      }
-
-      .swiper-button-next,
-      .swiper-button-prev {
-        color: #333;
-      }
-
-      .swiper-pagination-bullet {
-        background: #333;
-      }
-
-      .swiper-pagination-bullet-active {
-        background: #007aff;
-      }
-    </style>
+    <!-- Preload Images -->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.png" />
+    <link rel="preload" as="image" href="./assets/images/hero-bg.jpg" />
   </head>
+  <!-- ... (keep your existing head content) ... -->
+
+  <style>
+    /* Add these styles for the slider */
+
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    .swiper-container {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .swiper-slide {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .swiper-slide > section {
+      height: 100%;
+      overflow-y: hidden;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #333;
+    }
+
+    .swiper-pagination-bullet {
+      background: #333;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: #007aff;
+    }
+  </style>
 
   <body>
     <!-- Keep your header outside the slider -->
@@ -189,77 +174,51 @@
         <div class="swiper-slide">
           <section
             class="section service has-bg-image"
+            style="background-image: url('./assets/images/hero-bg.png'"
             aria-labelledby="service-label"
-            style="background-image: url('./assets/images/service.jpg')"
           >
             <div class="container">
               <div class="hero-content">
-                <h1 class="h1 section-title" style="margin-bottom: 25px">
-                  Unsere Dienstleistungen
-                </h1>
-
+                <h1 class="h1 section-title">Unsere Dienstleistungen</h1>
                 <ul class="service-list">
                   <li>
-                    <div class="service-card" style="margin-bottom: 20px">
-                      <h3
-                        class="h3 section-subtitle :dark"
-                        style="margin-bottom: 10px"
-                      >
+                    <div class="service-card">
+                      <h3 class="h3 section-subtitle :dark">
                         Smart und Fahrwerk reparieren
                       </h3>
                     </div>
                   </li>
-
                   <li>
-                    <div class="service-card" style="margin-bottom: 20px">
-                      <h3
-                        class="h3 section-subtitle :dark"
-                        style="margin-bottom: 10px"
-                      >
+                    <div class="service-card">
+                      <h3 class="h3 section-subtitle :dark">
                         Karosserie und Lackarbeiten
                       </h3>
                     </div>
                   </li>
-
                   <li>
-                    <div class="service-card" style="margin-bottom: 20px">
-                      <h3
-                        class="h3 section-subtitle :dark"
-                        style="margin-bottom: 10px"
-                      >
+                    <div class="service-card">
+                      <h3 class="h3 section-subtitle :dark">
                         Dellenentfernung
                       </h3>
                     </div>
                   </li>
-
                   <li>
-                    <div class="service-card" style="margin-bottom: 20px">
-                      <h3
-                        class="h3 section-subtitle :dark"
-                        style="margin-bottom: 10px"
-                      >
+                    <div class="service-card">
+                      <h3 class="h3 section-subtitle :dark">
                         Felgenreparaturen
                       </h3>
                     </div>
                   </li>
-
                   <li>
-                    <div class="service-card" style="margin-bottom: 20px">
-                      <h3
-                        class="h3 section-subtitle :dark"
-                        style="margin-bottom: 10px"
-                      >
+                    <div class="service-card">
+                      <h3 class="h3 section-subtitle :dark">
                         Pflege und Reinigungsdienste
                       </h3>
                     </div>
                   </li>
-
                   <li>
                     <div class="service-card">
-                      <h3
-                        class="h3 section-subtitle :dark"
-                        style="margin-bottom: 10px"
-                      >
+                      <h3 class="h3 section-subtitle :dark">
                         Reifen und Räderservice
                       </h3>
                     </div>
@@ -315,131 +274,69 @@
 
         <div class="swiper-slide">
           <section
-            class="section hero has-bg-image"
+            class="section about has-bg-image"
             style="background-image: url('./assets/images/hero-bg.png')"
             aria-labelledby="hero-label"
           >
             <div class="container">
               <div class="hero-content">
-                <div class="footer-brand">
-                  <a href="#" class="logo">
-                    <img
-                      src="./assets/images/logo.svg"
-                      width="128"
-                      height="63"
-                      alt="NitroAutoService Startseite"
-                    />
-                  </a>
+                <h1 class="h1 section-title" style="margin-bottom: 25px">
+                  Kontakt und Informationen
+                </h1>
 
-                  <p class="footer-text section-subtitle :dark">
-                    Rerum necessitatibus saepe eveniet aut et voluptates
-                    repudiandae sint et molestiae non recusandae.
-                  </p>
+                <p class="section-text">
+                  Bei NitroAutoService stehen wir Ihnen jederzeit zur Verfügung,
+                  um Ihre Fragen zu beantworten oder einen Termin zu
+                  vereinbaren. Kontaktieren Sie uns einfach über die unten
+                  aufgeführten Kontaktinformationen.
+                </p>
 
-                  <ul class="social-list">
-                    <li>
-                      <a href="#" class="social-link">
-                        <img
-                          src="./assets/images/facebook.svg"
-                          alt="facebook"
-                        />
-                      </a>
-                    </li>
-
-                    <li>
-                      <a href="#" class="social-link">
-                        <img
-                          src="./assets/images/instagram.svg"
-                          alt="instagram"
-                        />
-                      </a>
-                    </li>
-
-                    <li>
-                      <a href="#" class="social-link">
-                        <img src="./assets/images/twitter.svg" alt="twitter" />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-
-                <ul class="footer-list">
+                <ul class="about-list">
                   <li>
-                    <p class="h3 :dark">Öffnungszeiten</p>
-                  </li>
-                  <li>
-                    <p class="p">Montag – Samstag</p>
-                    <span class="span">(Nachvereinbarung)</span>
-                  </li>
-                </ul>
-
-                <ul class="footer-list">
-                  <li>
-                    <p class="h3 section-subtitle :dark">
-                      Kontaktinformationen
-                    </p>
+                    <strong>Öffnungszeiten:</strong> Montag – Samstag (Nach
+                    Vereinbarung)
                   </li>
 
                   <li>
-                    <a href="tel:+49 999 99 999" class="footer-link">
-                      <span class="material-symbols-rounded">call</span>
-                      <span class="span">+49 999 99 999</span>
+                    <strong>Telefon:</strong>
+                    <a href="tel:+49 999 99 999">+49 999 99 999</a>
+                  </li>
+
+                  <li>
+                    <strong>Email:</strong>
+                    <a href="mailto:info@NitroAutoService.de">
+                      nitroautoservice@gmail.com
                     </a>
                   </li>
 
                   <li>
-                    <a
-                      href="mailto:info@NitroAutoService.de"
-                      class="footer-link"
-                    >
-                      <span class="material-symbols-rounded">mail</span>
-                      <span class="span">info@NitroAutoService.de</span>
-                    </a>
-                  </li>
-
-                  <li>
-                    <address class="footer-link address">
-                      <span class="material-symbols-rounded">location_on</span>
-                      <span class="span"
-                        >Lauterbacher Str 5, 04651 Bad Lausick, Steinbach</span
-                      >
+                    <strong>Adresse:</strong>
+                    <address>
+                      Lauterbacher Str 5, 04651 Bad Lausick, Steinbach
                     </address>
                   </li>
                 </ul>
-              </div>
 
-              <img
-                src="./assets/images/footer-shape-3.png"
-                width="637"
-                height="173"
-                loading="lazy"
-                alt="Shape"
-                class="shape shape-3 move-anim"
-              />
-            </div>
-            <div class="footer-bottom">
-              <div class="container">
-                <p class="copyright">
-                  Urheberrecht 2024, NitroAutoService Alle Rechte vorbehalten.
-                </p>
-
-                <img
-                  src="./assets/images/footer-shape-2.png"
-                  width="778"
-                  height="335"
-                  loading="lazy"
-                  alt="Shape"
-                  class="shape shape-2"
-                />
-
-                <img
-                  src="./assets/images/footer-shape-1.png"
-                  width="805"
-                  height="652"
-                  loading="lazy"
-                  alt="Rotes Auto"
-                  class="shape shape-1 move-anim"
-                />
+                <ul class="social-list">
+                  <li>
+                    <a href="#" class="social-link">
+                      <img src="./assets/images/facebook.svg" alt="facebook" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="social-link">
+                      <img
+                        src="./assets/images/instagram.svg"
+                        alt="instagram"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="social-link">
+                      <img src="./assets/images/twitter.svg" alt="twitter" />
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
           </section>
