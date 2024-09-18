@@ -532,7 +532,7 @@ address {
 }
 
 .service-list {
-  gap: 0;
+  gap: 3;
   margin-block-end: 40px;
 }
 
@@ -664,26 +664,69 @@ address {
 \*-----------------------------------*/
 
 /* Responsive for larger than 575px screens */
-@media (min-width: 575px) {
+@media (min-width: 540px) {
   :root {
     --fs-1: 4rem;
-    --fs-2: 4rem;
+    --fs-2: 3.5rem;
     --fs-3: 2.8rem;
     --fs-4: 2rem;
     --fs-5: 1.6rem;
+    --container-padding: 2rem;
   }
 
   .container {
-    max-width: 540px;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: var(--container-padding);
+  }
+
+  .section-title {
+    font-size: var(--fs-2);
+    font-weight: 700;
+    margin-top: 8rem;
+    margin-bottom: 1rem;
+  }
+
+  .service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+  }
+
+  .service-card {
+
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
   }
 
   .section-subtitle {
-    --fs-5: 1.6rem;
+    font-size: var(--fs-5);
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
   }
 
   .h2 {
-    font-weight: var(--fw-700);
+    font-weight: 700;
   }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .section {
+    padding: 4rem 0;
+  }
+
+  .has-bg-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
 
   .hero .container {
     max-width: unset;
@@ -1002,10 +1045,6 @@ address {
     left: 0;
     width: 50%;
     height: 100%;
-    background-image: url('../images/about-abs-banner.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
     z-index: -1;
   }
 
