@@ -51,9 +51,12 @@
 
     body,
     html {
-      margin: 0;
-      padding: 0;
-      overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100vw; /* Viewport width */
+    height: 100vh; /* Viewport height */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    box-sizing: border-box;
     }
 
     .swiper-container {
@@ -362,7 +365,7 @@
         const swiper = new Swiper(".swiper-container", {
           direction: "horizontal",
           loop: false,
-          speed: 800,
+          speed: 600,
           spaceBetween: 0,
           slidesPerView: 1,
           mousewheel: true,
