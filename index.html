@@ -44,19 +44,18 @@
     <link rel="preload" as="image" href="./assets/images/hero-banner.png" />
     <link rel="preload" as="image" href="./assets/images/hero-bg.jpg" />
   </head>
-  <!-- ... (keep your existing head content) ... -->
 
   <style>
     /* Add these styles for the slider */
 
     body,
     html {
-    margin: 0;
-    padding: 0;
-    width: 100vw; /* Viewport width */
-    height: 100vh; /* Viewport height */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-    box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow-x: hidden;
+      box-sizing: border-box;
     }
 
     .swiper-container {
@@ -92,7 +91,7 @@
     <!-- Keep your header outside the slider -->
     <header class="header">
       <div class="container">
-        <a href="#" class="logo">
+        <a href="#home-slider" class="logo">
           <img
             src="./assets/images/logo.svg"
             width="168"
@@ -104,26 +103,22 @@
         <nav class="navbar" data-navbar>
           <ul class="navbar-list">
             <li>
-              <a href="#" class="navbar-link">Startseite</a>
+              <a href="#home-slider" class="navbar-link">Startseite</a>
             </li>
-
             <li>
-              <a href="#" class="navbar-link">Über Uns</a>
+              <a href="#services-slider" class="navbar-link">Dienstleistungen</a>
             </li>
-
             <li>
-              <a href="#" class="navbar-link">Dienstleistungen</a>
+              <a href="#about-slider" class="navbar-link">Über Uns</a>
             </li>
-
             <li>
-              <a href="#" class="navbar-link">Kontakt</a>
+              <a href="#contact-slider" class="navbar-link">Kontakt</a>
             </li>
           </ul>
         </nav>
 
         <a href="#" class="btn btn-primary">
           <span class="span">Angebot Einholen</span>
-
           <span class="material-symbols-rounded">arrow_forward</span>
         </a>
 
@@ -141,19 +136,18 @@
 
     <div class="swiper-container">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">
+        <div class="swiper-slide" id="home-slider">
           <section
             class="hero bg-plan"
             aria-labelledby="hero-label"
             style="background-image: url('./assets/images/hero-bg-7.jpeg')"
           >
             <div class="content-wrapper">
-
               <h1 class="h1 section-title">Auto Wartung & Reparatur Service</h1>
               <p class="section-text">
                 Qualität und Zuverlässigkeit für Ihr Fahrzeug.
               </p>
-              <a href="#" class="btn btn-primary">
+              <a href="#services-slider" class="btn btn-primary">
                 <span class="span">Unsere Dienstleistungen</span>
                 <span class="material-symbols-rounded">arrow_forward</span>
               </a>
@@ -168,7 +162,7 @@
           </section>
         </div>
 
-        <div class="swiper-slide">
+        <div class="swiper-slide" id="services-slider">
           <section
             class="section service has-bg-image"
             style="background-image: url('./assets/images/hero-bg-9.jpeg')"
@@ -180,44 +174,32 @@
                 <ul class="service-list">
                   <li>
                     <div class="service-card">
-                      <h3 class="h3 section-subtitle :dark">
-                        Smart und Fahrwerk reparieren
-                      </h3>
+                      <h3 class="h3 section-subtitle :dark">Smart und Fahrwerk reparieren</h3>
                     </div>
                   </li>
                   <li>
                     <div class="service-card">
-                      <h3 class="h3 section-subtitle :dark">
-                        Karosserie und Lackarbeiten
-                      </h3>
+                      <h3 class="h3 section-subtitle :dark">Karosserie und Lackarbeiten</h3>
                     </div>
                   </li>
                   <li>
                     <div class="service-card">
-                      <h3 class="h3 section-subtitle :dark">
-                        Dellenentfernung
-                      </h3>
+                      <h3 class="h3 section-subtitle :dark">Dellenentfernung</h3>
                     </div>
                   </li>
                   <li>
                     <div class="service-card">
-                      <h3 class="h3 section-subtitle :dark">
-                        Felgenreparaturen
-                      </h3>
+                      <h3 class="h3 section-subtitle :dark">Felgenreparaturen</h3>
                     </div>
                   </li>
                   <li>
                     <div class="service-card">
-                      <h3 class="h3 section-subtitle :dark">
-                        Pflege und Reinigungsdienste
-                      </h3>
+                      <h3 class="h3 section-subtitle :dark">Pflege und Reinigungsdienste</h3>
                     </div>
                   </li>
                   <li>
                     <div class="service-card">
-                      <h3 class="h3 section-subtitle :dark">
-                        Reifen und Räderservice
-                      </h3>
+                      <h3 class="h3 section-subtitle :dark">Reifen und Räderservice</h3>
                     </div>
                   </li>
                 </ul>
@@ -226,7 +208,7 @@
           </section>
         </div>
 
-        <div class="swiper-slide">
+        <div class="swiper-slide" id="about-slider">
           <section
             class="section about has-bg-image"
             style="background-image: url('./assets/images/hero-bg-8.jpeg')"
@@ -234,42 +216,22 @@
           >
             <div class="container">
               <div class="hero-content">
-                <h1 class="h1 section-title" style="margin-bottom: 25px">
-                  Über Uns
-                </h1>
-
+                <h1 class="h1 section-title" style="margin-bottom: 25px">Über Uns</h1>
                 <p class="section-text">
                   Bei NitroAutoService sind wir stolz darauf, erstklassige
-                  Autoreparatur- und Wartungsdienste anzubieten. Mit jahrelanger
-                  Erfahrung und einem engagierten Team von Fachleuten stellen
-                  wir sicher, dass Ihr Fahrzeug in den besten Händen ist.
+                  Autoreparatur- und Wartungsdienste anzubieten.
                 </p>
-
                 <ul class="about-list">
-                  <li>
-                    <strong>Modernste Ausrüstung:</strong> Wir investieren in
-                    die neuesten Technologien und Werkzeuge, um präzise
-                    Diagnosen und effiziente Reparaturen zu gewährleisten.
-                  </li>
-
-                  <li>
-                    <strong>Erfahrene Mitarbeiter:</strong> Unser Team besteht
-                    aus hochqualifizierten Technikern mit umfangreicher
-                    Erfahrung in der Fahrzeugreparatur und -wartung.
-                  </li>
-
-                  <li>
-                    <strong>Qualitätswartung:</strong> Wir legen großen Wert auf
-                    gründliche und zuverlässige Wartungsarbeiten, um die
-                    Langlebigkeit und Leistung Ihres Fahrzeugs zu optimieren.
-                  </li>
+                  <li><strong>Modernste Ausrüstung:</strong> Wir investieren in die neuesten Technologien und Werkzeuge, um präzise Diagnosen und effiziente Reparaturen zu gewährleisten.</li>
+                  <li><strong>Erfahrene Mitarbeiter:</strong> Unser Team besteht aus hochqualifizierten Technikern mit umfangreicher Erfahrung in der Fahrzeugreparatur und -wartung.</li>
+                  <li><strong>Qualitätswartung:</strong> Wir legen großen Wert auf gründliche und zuverlässige Wartungsarbeiten, um die Langlebigkeit und Leistung Ihres Fahrzeugs zu optimieren.</li>
                 </ul>
               </div>
             </div>
           </section>
         </div>
 
-        <div class="swiper-slide">
+        <div class="swiper-slide" id="contact-slider">
           <section
             class="section about has-bg-image"
             style="background-image: url('./assets/images/hero-bg-6.jpeg')"
@@ -277,62 +239,20 @@
           >
             <div class="container">
               <div class="hero-content">
-                <h1 class="h1 section-title" style="margin-bottom: 25px">
-                  Kontakt und Informationen
-                </h1>
-
+                <h1 class="h1 section-title" style="margin-bottom: 25px">Kontakt und Informationen</h1>
                 <p class="section-text">
-                  Bei NitroAutoService stehen wir Ihnen jederzeit zur Verfügung,
-                  um Ihre Fragen zu beantworten oder einen Termin zu
-                  vereinbaren. Kontaktieren Sie uns einfach über die unten
-                  aufgeführten Kontaktinformationen.
+                  Bei NitroAutoService stehen wir Ihnen jederzeit zur Verfügung, um Ihre Fragen zu beantworten oder einen Termin zu vereinbaren.
                 </p>
-
                 <ul class="about-list">
-                  <li>
-                    <strong>Öffnungszeiten:</strong> Montag – Samstag (Nach
-                    Vereinbarung)
-                  </li>
-
-                  <li>
-                    <strong>Telefon:</strong>
-                    <a href="tel:+49 1575 3206497">+49 1575 3206497</a>
-                  </li>
-
-                  <li>
-                    <strong>Email:</strong>
-                    <a href="mailto:info@NitroAutoService.de">
-                      nitroautoservice@gmail.com
-                    </a>
-                  </li>
-
-                  <li>
-                    <strong>Adresse:</strong>
-                    <address>
-                      Lauterbacher Str 5, 04651 Bad Lausick, Steinbach
-                    </address>
-                  </li>
+                  <li><strong>Öffnungszeiten:</strong> Montag – Samstag (Nach Vereinbarung)</li>
+                  <li><strong>Telefon:</strong><a href="tel:+49 1575 3206497">+49 1575 3206497</a></li>
+                  <li><strong>Email:</strong><a href="mailto:info@NitroAutoService.de">info@NitroAutoService.de</a></li>
+                  <li><strong>Adresse:</strong><address>Lauterbacher Str 5, 04651 Bad Lausick, Steinbach</address></li>
                 </ul>
-
                 <ul class="social-list">
-                  <li>
-                    <a href="#" class="social-link">
-                      <img src="./assets/images/facebook.svg" alt="facebook" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="social-link">
-                      <img
-                        src="./assets/images/instagram.svg"
-                        alt="instagram"
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="social-link">
-                      <img src="./assets/images/twitter.svg" alt="twitter" />
-                    </a>
-                  </li>
+                  <li><a href="#" class="social-link"><img src="./assets/images/facebook.svg" alt="facebook" /></a></li>
+                  <li><a href="#" class="social-link"><img src="./assets/images/instagram.svg" alt="instagram" /></a></li>
+                  <li><a href="#" class="social-link"><img src="./assets/images/twitter.svg" alt="twitter" /></a></li>
                 </ul>
               </div>
             </div>
@@ -351,11 +271,8 @@
       <div class="swiper-scrollbar"></div>
     </div>
 
-    <!-- ... (keep your existing script imports) ... -->
-
     <!-- Swiper JS -->
     <script src="assets/js/swiper/swiper-bundle.min.js"></script>
-
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const swiper = new Swiper(".swiper-container", {
@@ -382,40 +299,24 @@
             el: ".swiper-scrollbar",
             draggable: true,
           },
-          effect: "swap",
-          fadeEffect: {
-            crossFade: true,
-          },
           autoplay: {
             delay: 5000,
             disableOnInteraction: true,
           },
-          on: {
-            init: function () {
-              document.querySelector(
-                ".swiper-slide-active .slide-content"
-              ).style.opacity = "1";
-              document.querySelector(
-                ".swiper-slide-active .slide-content"
-              ).style.transform = "translateY(0)";
-            },
-          },
         });
 
-        // Add hash-based navigation
-        swiper.on("slideChange", function () {
-          let index = this.activeIndex;
-          let slides = ["home", "services", "about", "work"];
-          window.location.hash = slides[index];
+        // Navigate using navbar links
+        document.querySelectorAll(".navbar-link").forEach((link) => {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href").replace("#", "");
+            const targetSlide = document.querySelector(`#${targetId}`);
+            if (targetSlide) {
+              const slideIndex = [...targetSlide.parentElement.children].indexOf(targetSlide);
+              swiper.slideTo(slideIndex);
+            }
+          });
         });
-
-        // Initialize slide based on hash
-        let hash = window.location.hash.replace("#", "");
-        let slides = ["home", "services", "about", "work"];
-        let initialSlide = slides.indexOf(hash);
-        if (initialSlide > -1) {
-          swiper.slideTo(initialSlide);
-        }
       });
     </script>
     <script src="./assets/js/script.js"></script>
