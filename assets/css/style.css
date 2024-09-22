@@ -260,14 +260,7 @@ body {
   animation: moving 2s ease-in-out infinite alternate;
 }
 
-@keyframes moving {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(10px);
-  }
-}
+
 
 .section {
   padding-block: var(--section-padding);
